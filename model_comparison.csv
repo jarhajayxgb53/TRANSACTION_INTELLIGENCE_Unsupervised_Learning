@@ -1,0 +1,5 @@
+Model,silhouette_score,davies_bouldin_index,calinski_harabasz_index,n_clusters,noise_pct
+K-Means,0.2995,1.3411,2364.04,3,0.0
+Hierarchical,0.2962,1.3398,2335.6188,3,0.0
+DBSCAN,0.2117,1.0029,1107.5514,3,3.74
+GMM,0.055,4.9885,800.1971,10,0.0

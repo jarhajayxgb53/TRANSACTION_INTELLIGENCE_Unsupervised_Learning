@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*.log
+.venv/
+venv/
+.vscode/
+.kilo/
+.streamlit/secrets.toml
+.ipynb_checkpoints/
+.DS_Store

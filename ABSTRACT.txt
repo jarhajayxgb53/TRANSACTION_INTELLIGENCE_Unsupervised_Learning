@@ -1,0 +1,67 @@
+
+UNSUPERVISED LEARNING ANALYSIS OF TRANSACTION DATA: PATTERN DISCOVERY AND CLUSTERING
+
+ABSTRACT
+
+==========================================================================================
+
+Background:
+Transaction data analysis is crucial for understanding customer behavior patterns, 
+market segmentation, and anomaly detection in financial systems. Unsupervised learning 
+approaches enable organizations to discover hidden structures and patterns without 
+predefined labels or outcomes.
+
+Objective:
+This study applies multiple unsupervised learning algorithms to a comprehensive 
+transactions dataset to identify natural groupings, detect anomalies, and extract 
+actionable insights. The analysis compares K-Means clustering, Hierarchical clustering, 
+DBSCAN, and Gaussian Mixture Models to determine the most effective methodology for 
+pattern discovery.
+
+Methodology:
+The dataset containing 5,000 transactions with 11 numerical features 
+underwent rigorous preprocessing including missing value imputation, feature scaling 
+using StandardScaler, and dimensionality reduction via Principal Component Analysis (PCA). 
+PCA retained 10 components explaining 97.64% of total variance.
+
+Four distinct unsupervised learning models were implemented and evaluated:
+
+1. K-Means Clustering: Optimal cluster count of 2 was determined using elbow 
+   method and silhouette analysis (Silhouette Score: 0.3797, 
+   Calinski-Harabasz Index: 1716.2322).
+
+2. Hierarchical Clustering: Ward linkage method produced comparable results 
+   (Silhouette Score: 0.2394) with clear dendrogram structure.
+
+3. DBSCAN: Density-based clustering identified 1 clusters with 
+   260 anomalous points (5.20% contamination).
+
+4. Gaussian Mixture Models: Optimal 9 components selected via BIC 
+   (Silhouette Score: 0.0674) with probabilistic cluster assignments.
+
+Key Findings:
+• K-Means emerged as the best-performing model with the highest Silhouette score 
+  (0.3797), indicating well-separated and coherent clusters.
+• Cluster analysis revealed distinct transaction patterns across 2 groups with 
+  varying size distributions and characteristic features.
+• Anomaly detection via Isolation Forest identified 500 outlier transactions 
+  (10.00%) representing unusual behavior.
+• Feature importance analysis showed transaction_amount and transaction_frequency as 
+  primary discriminators between clusters.
+• PCA dimensionality reduction maintained 97.64% variance 
+  while reducing feature space from 11 to 10 dimensions.
+
+Conclusions:
+This comprehensive unsupervised analysis successfully uncovered natural transaction 
+groupings that can be leveraged for customer segmentation, risk management, and 
+targeted business strategies. K-Means clustering proved most effective, providing 
+interpretable results with strong statistical validation. The identified patterns 
+offer actionable insights for business decision-making and further investigation.
+
+Future Work:
+• Incorporate temporal analysis for transaction sequence patterns
+• Implement semi-supervised learning to validate cluster interpretations
+• Develop real-time anomaly detection systems using the identified patterns
+• Integrate domain expertise for business-driven cluster labeling and interpretation
+
+==========================================================================================

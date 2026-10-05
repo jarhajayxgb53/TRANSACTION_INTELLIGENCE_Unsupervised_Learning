@@ -1,0 +1,29 @@
+# Python Dependencies for Unsupervised Learning Project
+# ====================================================
+
+# Data manipulation
+pandas>=1.3.0
+numpy>=1.20.0
+pyarrow>=5.0.0
+
+# Machine Learning
+scikit-learn>=1.0.0
+
+# Visualization
+matplotlib>=3.3.0
+seaborn>=0.11.0
+plotly>=5.0.0
+streamlit>=1.50.0
+
+# Utilities
+scipy>=1.7.0
+joblib>=1.0.0
+
+# Jupyter support (optional)
+jupyter>=1.0.0
+ipython>=7.0.0
+
+# Development and testing (optional)
+pytest>=6.0.0
+black>=21.0.0
+pylint>=2.0.0
